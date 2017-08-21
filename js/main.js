@@ -75,3 +75,21 @@ function prntCtrl() {
 }
 
 // ============ task #6 ============ //
+
+document.getElementById('exp').onclick = exp;
+
+function exp() {
+    var expAge = document.getElementById('expAge').value;
+
+    if (expAge == '' || expAge < 0) {
+        alert('Enter your age !');
+    } else if (expAge >= 0 && expAge < 3) {
+        alert('Your surcharge is 0%');
+    } else if (expAge >= 3 && expAge < 10) {
+        alert('Your surcharge is 10%');
+    } else if (expAge >= 10 && expAge < 30) {
+        alert('Your surcharge is 20%');
+    } else if (expAge >= 30) {
+        alert('Your surcharge is 30%');
+    }
+}
